@@ -28,6 +28,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 
 gem 'haml'
+gem 'bourbon'
+gem 'bitters'
+gem 'neat'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
