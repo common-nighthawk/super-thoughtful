@@ -1,15 +1,18 @@
 @import "bourbon";
 @import "base/base";
+@import "grid-settings";
 @import "neat";
+@import "refills/flashes";
 
 body {
   @include outer-container;
 }
 
-h1 {
-  @include span-columns(3);
-}
-
-p {
-  @include span-columns(9);
+.login {
+  @include span-columns(12);
+  .sign-in, .sign-up {
+    @include span-columns(6 of 12);
+    @include media($tablet) { @include span-columns(12 of 12); }
+    @include media($mobile) { @include span-columns(12 of 12); }
+  }
 }

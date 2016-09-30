@@ -1,2 +1,25 @@
-%h1 Sessions#new
-%p Find me in app/views/sessions/new.html.haml
+.login
+  .sign-in
+    %h1 Sign In - existing account
+    = form_for @user, url: sessions_path do |f|
+      = f.label :email
+      = f.text_field :email
+
+      = f.label :password
+      = f.text_field :password
+
+      = f.submit
+
+  .sign-up
+    %h1 Sign Up - register for an account
+    = form_for @user, url: sessions_path do |f|
+      = f.label :email
+      = f.text_field :email
+
+      = f.label :password
+      = f.text_field :password
+
+      = f.label :password_confirmation
+      = f.text_field :password_confirmation
+
+      = f.submit
