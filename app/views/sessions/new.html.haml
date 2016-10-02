@@ -12,7 +12,7 @@
 
   .sign-up
     %h1 Sign Up - register for an account
-    = form_for @user, url: sessions_path do |f|
+    = form_for @user, url: users_path do |f|
       = f.label :email
       = f.text_field :email
 
