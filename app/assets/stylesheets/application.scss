@@ -11,6 +11,8 @@ body {
 .login {
   @include span-columns(12);
   h1 { text-align: center; }
+  select { display: initial; }
+  input[type=submit] { display: block; }
   .sign-in, .sign-up {
     @include span-columns(6 of 12);
     @include media($tablet) { @include span-columns(12 of 12); }

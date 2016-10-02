@@ -22,4 +22,7 @@
       = f.label :password_confirmation
       = f.text_field :password_confirmation
 
+      = f.label :birthdate
+      = f.date_select(:birthdate, :order => [:month, :day, :year], start_year: start_year, end_year: end_year, prompt: true)
+
       = f.submit
